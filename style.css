@@ -1,0 +1,165 @@
+/* colors 
+#31393C
+#20BF55
+#FDCA40
+#FBFBFF
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #31393C;
+}
+
+/* Global Classes */
+.disable {
+    display: none;
+}
+
+/* Global Elements */
+.btn {
+    font-weight: 800;
+    cursor: pointer;
+    background: #555fe5;
+    color: #FBFBFF;
+    border: none;
+    border-radius: 10px;
+    min-width: 15px;
+    padding: .5rem .8rem;
+}
+
+.modal-container {
+    background: #182a41ca;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .modal {
+    background: #FBFBFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-container .modal .btn#btn_close-modal {
+    padding: 5px 10px;
+    background: #c80505;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.modal-container .modal label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.modal-container .modal #input_modal-info {
+    resize: none;
+    height: 130px;
+    margin: 1rem 0;
+    padding: .6rem;
+    font-size: 18px;
+}
+
+.app-header {
+    background: #555fe5;
+    height: 50px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    border: 3px solid #FBFBFF;
+}
+
+.app-header h1 {
+    color: #FBFBFF;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.app-main {
+    display: flex;
+    height: 100vh;
+
+}
+
+.app-main .sidebar {
+    min-width: 300px;
+    /* height: calc(100vh - 50px); */
+    background: #1d333a;
+    border-left: 3px solid #FBFBFF;
+    border-right: 3px solid #FBFBFF;
+}
+
+.app-main .dashboard {
+    width: 100%;
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem
+}
+
+.app-main .dashboard .column {
+    border: 2px solid #FBFBFF;
+    border-radius: 20px;
+}
+
+.app-main .dashboard .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FBFBFF;
+    padding: 1rem;
+    background: #555fe5;
+    border-radius: 20px 20px 0 0 
+}
+
+.app-main .dashboard .column-header .count {
+    margin-left: 5px;
+    font-weight: 800;
+    background: #1d333a;
+    color: #FBFBFF;
+    padding: 5px 10px;
+}
+
+.app-main .dashboard .column .task-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.app-main .dashboard .column .task-container .task-card {
+    list-style: none;
+    background: rgb(235, 215, 105);
+    margin: 0 1rem;
+    min-height: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.app-main .dashboard .column .btn#btn_add-task {
+    display: block;
+    margin: auto;
+    background: none;
+    font-size: 20px;
+    border-bottom: 2px solid #FBFBFF;
+    border-radius: 0;
+}

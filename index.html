@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Kanban Dashboard | Beta 1.0</title>
+</head>
+<body>
+    <div class="modal-container disable">
+        <form class="modal" id="modal">
+            <a class="btn" id="btn_close-modal">x</a>
+            <label for="input_modal_info">Task Info</label>
+            <textarea id="input_modal-info"></textarea>
+            <button type="submit" class="btn" id="btn_btn-submit">add new task</button>
+        </form>
+    </div>
+
+    <!-- <header class="app-header">
+        <h1>Kanban Dashboard</h1>
+    </header> -->
+
+    <main class="app-main">
+        <!-- <aside class="sidebar">
+            <ul>
+                <li>Add new Column</li>
+            </ul>
+        </aside> -->
+        <section class="dashboard">
+            <div class="column">
+                <header class="column-header">
+                    <h3 class="column-title">Not Started</h3>
+                    <span class="count">4</span>
+                </header>
+                <ul class="task-container">
+                    <li class="task-card" draggable="true">Tarefa detalhada</li>
+                    <li class="task-card" draggable="true">Secundário</li>
+                </ul>
+                <button class="btn" id="btn_add-task">Add Task +</button>
+            </div>
+            <div class="column">
+                <header class="column-header">
+                    <h3 class="column-title">Not Started</h3>
+                    <span class="count">4</span>
+                </header>
+                <ul class="task-container">
+
+                </ul>
+                <button class="btn" id="btn_add-task">Add Task +</button>
+            </div>
+            <div class="column">
+                <header class="column-header">
+                    <h3 class="column-title">Not Started</h3>
+                    <span class="count">4</span>
+                </header>
+                <ul class="task-container">
+
+                </ul>
+                <button class="btn" id="btn_add-task">Add Task +</button>
+            </div>
+            <div class="column">
+                <header class="column-header">
+                    <h3 class="column-title">Not Started</h3>
+                    <span class="count">4</span>
+                </header>
+                <ul class="task-container">
+
+                </ul>
+                <button class="btn" id="btn_add-task">Add Task +</button>
+            </div>
+            <div class="column">
+                <header class="column-header">
+                    <h3 class="column-title">Not Started</h3>
+                    <span class="count">4</span>
+                </header>
+                <ul class="task-container">
+
+                </ul>
+                <button class="btn" id="btn_add-task">Add Task +</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
